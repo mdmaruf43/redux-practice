@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
-import counterReducer from "./counter/counterReducer";
-import dynamicCounterReducer from "./dynamicCounter/dynamicCounterReducer";
+import todoReducer from "./todos/reducer";
+import filterReducer from "./filters/filterReducer";
+
+
 
 const rootReducer = combineReducers({
-    counter: counterReducer,
-    dynamicCounter: dynamicCounterReducer,
+    todos: todoReducer,
+    filters: filterReducer,
 });
 
 export default rootReducer;
